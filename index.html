@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acara 2 | Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary shadow" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Kabupaten Toba</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                Home <i class="bi bi-house-gear-fill"></i>
+                            </a>
+                        </li>
+                        <!-- Ubah href menjadi #deskripsi -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#deskripsi">Deskripsi <i class="bi bi-card-heading"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#penduduk">Penduduk <i class="bi bi-people"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kecamatan">Kecamatan <i class="bi bi-x-diamond"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sumber">Sumber <i class="bi bi-archive-fill"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gambar">Gambar <i class="bi bi-images"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#infoModal"><i class="bi bi-info-circle"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-2">
+        <!-- Title -->
+        <div class="alert alert-info shadow text-center" role="alert">
+            <h3>Kabupaten Toba</h3>
+            <h5>Sumatra Utara</h5>
+        </div>
+
+        <!-- Deskripsi: Tambahkan id="deskripsi" -->
+        <div class="card shadow" id="deskripsi">
+            <div class="card-body">
+                <h6>Deskripsi</h6>
+                <hr>
+                <p>Kabupaten Toba merupakan salah satu kabupaten di Provinsi Sumatera Utara yang beribu kota di
+                    Kecamatan
+                    Balige. Wilayah ini sebelumnya dikenal dengan nama Kabupaten Toba Samosir, hasil pemekaran dari
+                    Kabupaten
+                    Tapanuli Utara pada tahun 1998, sebelum akhirnya Kabupaten Samosir dipisahkan sebagai daerah otonom
+                    tersendiri pada tahun 2003. Nama "Toba Samosir" kemudian diubah menjadi Kabupaten Toba melalui
+                    perubahan
+                    administratif pada tahun 2020, menyesuaikan identitas daerah dengan wilayah geografisnya yang kini
+                    tidak
+                    lagi mencakup Pulau Samosir secara administratif.</p>
+                <p>Secara geografis, Kabupaten Toba menempati posisi strategis di tepian selatan hingga timur Danau
+                    Toba, danau
+                    vulkanik yang terbentuk akibat letusan supervulkan Gunung Toba ribuan tahun silam. Danau Toba
+                    sendiri
+                    tercatat sebagai danau terluas di Asia Tenggara dan menjadi bagian dari kawasan yang ditetapkan
+                    UNESCO
+                    sebagai Global Geopark pada tahun 2020. Kabupaten Toba menjadi satu dari tujuh kabupaten yang
+                    mengelilingi
+                    danau tersebut, bersama Kabupaten Samosir, Simalungun, Karo, Dairi, Humbang Hasundutan, dan Tapanuli
+                    Utara,
+                    sehingga wilayahnya banyak diwarnai bentang alam perbukitan, lembah, dan garis pantai danau yang
+                    menjadi
+                    daya tarik utama sektor pariwisata setempat.</p>
+            </div>
+        </div>
+
+        <!-- Penduduk -->
+        <div class="card shadow mt-3" id="penduduk">
+            <div class="card-body">
+                <h6>Penduduk</h6>
+                <hr>
+                <!-- Table -->
+                <table class="table table-hover">
+                    <tr>
+                        <th>No</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Jumlah</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Laki-laki</td>
+                        <td>102.850</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Perempuan</td>
+                        <td>103.349</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Total</td>
+                        <td>206.199</td>
+                    </tr>
+                </table>
+                <hr>
+            </div>
+        </div>
+
+
+        <!-- #Kecamatan -->
+        <div class="card shadow mt-3" id="kecamatan">
+            <div class="card-body">
+                <h6>Kecamatan</h6>
+                <hr>
+                <ol>
+                    <li>Porsea</li>
+                    <li>Parmaksian</li>
+                    <li>Balige</li>
+                    <li>Uluan</li>
+                    <li>Silaen</li>
+                    <li>Ajibata</li>
+                </ol>
+                <hr>
+            </div>
+        </div>
+
+        <!-- Sumber -->
+        <div class="card shadow mt-3" id="sumber">
+            <div class="card-body">
+                <h6>Sumber</h6>
+                <hr>
+                <!-- Link -->
+                Sumber: <a href="https://youtu.be/j1Zcziqdg9M?si=KxPesNGyM5T62s7Z" target="_blank">Click here!
+                    Youtube</a>
+            </div>
+        </div> <!-- DITAMBAHKAN PENUTUP CARD SUMBER -->
+
+        <!-- Gambar -->
+        <div class="card shadow mt-3" id="gambar">
+            <div class="card-body">
+                <h6>Gambar</h6>
+                <hr>
+                <!-- Image -->
+                <img src="https://www.gobatak.com/wp-content/uploads/2017/08/Objek-Wisata-Danau-..." width="450">
+                <img src="images/Pemandangan-Danau-Toba-yang-menakjubkan.jpg" width="450">
+                <img src="https://tobakab.go.id/themes/home/assets/images/setting/logo-disduk..." width="300">
+            </div>
+        </div>
+    </main>
+    <!-- Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Info</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td>Riveldi Siahaan</td>
+                        </tr>
+                        <tr>
+                            <td>NIM</td>
+                            <td>:</td>
+                            <td>25/560689/SV/26464</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas</td>
+                            <td>:</td>
+                            <td>A</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
